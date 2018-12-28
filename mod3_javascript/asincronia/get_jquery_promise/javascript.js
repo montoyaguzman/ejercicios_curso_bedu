@@ -20,18 +20,19 @@ $('button').click(function() {
 function getPersonaje(id) {
   return new Promise(function(resolve, reject) {
     let url = `${API_URL}${PEOPLE.replace(':id', id)}`
-    if(id < 17) {
-      $.get(url, opcs, function(data) {
-        resolve(data)
-      }).fail(function(){
-        reject(id)
-      })
-    }
+    $.get(url, opcs, function(data, success, dataType) {
+      resolve(data)
+    }).fail(function(dataType) {
+      reject(dataType)      
+    })
   }).then(function(personaje) {
     console.log(`Hola, yo soy ${personaje.name}`)
     getPersonaje(id + 1)
-  }).catch(function(id) {
-    console.log(`Error en ${id}`)
+    // Se podrias colocar n .then para rellamar al get
+    // y obtener otro personaje. .then recibe la ultima
+    // respuesta obtenida
+  }).catch(function(dataType) {
+    console.log(`Error en ${id} con estaus: ${dataType.status}`)
   })
 }
 
