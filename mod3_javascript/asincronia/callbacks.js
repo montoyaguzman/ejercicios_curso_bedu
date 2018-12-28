@@ -8,4 +8,5 @@ const fn = (error, data) => {
   console.log(data);
 };
 
-multiplicar(3, 4, fn);
+multiplicar(3, 'a', fn);
+multiplicar(3, 5, fn);

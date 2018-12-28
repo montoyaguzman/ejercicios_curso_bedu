@@ -15,3 +15,5 @@ let promiseMultiplicar = (a, b) =>
       resolve(data);
     });
   });
+
+  console.log(typeof promiseMultiplicar);

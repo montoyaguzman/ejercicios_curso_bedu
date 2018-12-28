@@ -1,12 +1,11 @@
 const API_URL = 'https://swapi.co/api/'
-const DARTH_VADER = 'people/:id'
+const PEOPLKE = 'people/:id'
 const opcs = { crossDomain: true }
 
 let id = 1
-let url = `${API_URL}${DARTH_VADER.replace(':id', id)}`
 
 $(document).ready(function(){
-  console.log('API: ', url)
+  console.log('API: ', API_URL)
 });
   
 $('p').click(function(){
@@ -15,7 +14,19 @@ $('p').click(function(){
 
 $('button').click(function(){
   handlerClick()
-  $.get(url, opcs, onResponse)
+  
+  /* Asincronia
+  getPersonaje(1) // Luke
+  getPersonaje(2) // C-3PO
+  getPersonaje(3) // R2 - D2
+  */
+
+  // Sincronia con calbacks
+  getPersonaje(1, function (){
+    getPersonaje(2, function(){
+        getPersonaje(3)
+      })
+    })
 })
 
 function handlerClick() {
@@ -24,10 +35,16 @@ function handlerClick() {
 
 const onResponse = function(data, success, dataType) {
   console.log('data: ', data)
-  console.log('success: ', success)
   console.log(`Peticion exitosa : ${dataType.status}`)
 }
 
+function getPersonaje(id, fn) {
+  let url = `${API_URL}${PEOPLKE.replace(':id', id)}`
+  $.get(url, opcs, onResponse)
+  if(fn) {
+    fn()
+  }
+}
 
 
 
