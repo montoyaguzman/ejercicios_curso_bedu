@@ -36,21 +36,3 @@ function getPersonaje(id) {
 }
 
 
-/*function getPersonaje(id) {
-  
-  let url = `${API_URL}${PEOPLE.replace(':id', id)}`
-  return new Promise((resolve, reject) => {
-    $.get(url, opcs, function(){
-      if (dataType.status === '200') {
-        resolve()
-      }
-      console.log('data: ', data)
-      console.log(`Peticion exitosa : ${dataType.status}`)
-    })
-  })
-}
-*/
-
-
-
-
