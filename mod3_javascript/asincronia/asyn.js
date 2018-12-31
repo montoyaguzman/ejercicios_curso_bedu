@@ -10,7 +10,7 @@ async function pintar() {
   try {
     const response = await division(1, 2);
     const number = await getNumber();
-    console.log(`El resultado es ${response + number}`);
+    console.log(`El resultado es ${response * number}`);
   } catch (e) {
     console.error("Tuvimos un error", e);
   }

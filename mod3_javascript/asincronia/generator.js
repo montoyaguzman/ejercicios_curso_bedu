@@ -22,4 +22,5 @@ const holas = Saludador();
 
 console.log(holas.next());
 console.log(holas.next());
+console.log(holas.return());
 console.log(holas.next());
