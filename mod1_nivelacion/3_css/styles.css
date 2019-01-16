@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+.red {
+  color: red;
+}
+
+#blue {
+  color: blue;
+}
+
+.contenedor {
+  border: 1px solid red;
+  width: 100%;
+  height: 150px;
+  position: relative;
+}
+
+.ball {
+  width: 20px;
+  height: 20px;
+  background-color: black;
+  border-radius: 100px;
+  position: absolute;
+}

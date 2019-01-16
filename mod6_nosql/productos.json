@@ -1,0 +1,14 @@
+db.products.insertMany(
+  {
+    name: 'carlos v',
+    type: 'dulce'
+  }
+  {
+    name: 'coca cola',
+    type: 'refresco'
+  }
+  {
+    name: 'tupsi',
+    type: 'dulce'
+  }
+)

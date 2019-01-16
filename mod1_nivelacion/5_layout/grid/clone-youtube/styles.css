@@ -1,0 +1,65 @@
+body {
+  margin: 0;
+  display: grid;
+}
+
+.menu {
+  display: grid;
+  grid-template-columns: 5% 10% 70% 15%;
+  grid-template-rows: 30px;
+  border: solid 5px black;
+  /*padding: 21px;*/
+}
+
+.menuElement {
+  background: rgb(0, 140, 255);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  font-size: 15px;
+  text-align: center;
+}
+
+.iconosRight {
+  display: grid;
+  grid-template-rows: 100%;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  background: rgb(0, 140, 255);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  font-size: 15px;
+  text-align: center;
+}
+
+.gridBody {
+  display: grid;
+  grid-template-columns: 15% 85%;
+  height: 600px;
+  background: #cfd8dc;
+  border: solid 5px yellow;
+}
+
+.menuLeft {
+  border: solid 3px orange;
+}
+
+.main {
+  border: solid 3px orange;
+}
+
+.recommend {
+  display: grid;
+  grid-template-rows: 20px 100px;
+}
+
+.title1 {
+}
+
+.videos1 {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto;
+  grid-row-gap: 5px;
+}
+
+.video {
+  width: 100%;
+  height: 70px;
+  border: solid 5px green;
+}

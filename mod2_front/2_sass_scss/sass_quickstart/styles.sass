@@ -1,0 +1,58 @@
+$color1: red !default;
+$color2: green !default;
+$color3: blue !default;
+$color4: yellow !default;
+/*$color4: yellow !default;*/
+//$color4: yellow !default;
+$translucent-red: rgba(255, 0, 0, 0.5);
+$break-small: 320px;
+$break-large: 1200px;
+
+.titulo
+  background-color: $color3
+
+.subtitulo
+  background-color: $color2
+
+.cardMenu 
+  background-color: $color4
+  .menu
+    color: $color1
+
+#contenedor
+  border: 3px solid yellow
+  width: calc(450px/2)
+  height: 200px
+  color: #ef9a9a + #0097a7
+  background-color: transparentize($translucent-red, 0.25);
+
+@mixin links-personal($colorLink, $backLink)
+  a
+    color: $colorLink
+    background-color: $backLink
+
+.link 
+  @include links-personal(blue,yellow)
+
+%btn 
+  width: 100px;
+  text-align: center;
+  padding: 5px 0;
+  margin: 2px auto;
+  border-radius: 2px;
+  color: white;
+
+.myButton 
+  @extend %btn;
+  background-color: black;
+
+.profile-pic 
+  float: left;
+  width: 250px;
+  @media screen and (max-width: $break-small) 
+    width: 100px;
+    float: none;
+  
+  @media screen and (min-width: $break-large) 
+    float: right;
+  

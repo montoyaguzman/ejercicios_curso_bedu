@@ -1,0 +1,25 @@
+.containerMain {
+  border: 1px black solid;
+  padding: 100px;
+  display: flex;
+}
+
+.container {
+  border: 1px red solid;
+  padding: 70px;
+  display: block;
+}
+
+.div1 {
+  border: 1px green solid;
+  padding: 50px;
+  display: block;
+  
+}
+
+.div2 {
+  border: 1px blue solid;
+  padding: 50px;
+  display: block;
+  
+}

@@ -1,0 +1,33 @@
+yarn add -D flow-bin //instalar flow
+yarn flow init //crea el .flowconfig
+yarn flow status //valida los archivos con lint
+yarn flow //validar
+
+// @flow
+
+github
+Microsoft/vscode/issues/5214
+
+TDD
+Hsacer prueba y hasta que pase la prueba el input, da OK
+//jest
+
+//enzyme
+
+//snapshot
+
+
+.test/.spec
+
+
+
+
+
+
+
+
+
+
+
+
+

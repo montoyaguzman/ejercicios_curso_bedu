@@ -1,0 +1,136 @@
+.blue {
+  color: blue;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+	padding: 0;
+}
+
+.containerMain {
+  display: flex;
+  flex-direction: row;
+  /*border: solid 2px red;*/
+  height: 100%;
+}
+
+.rigthMenu {
+  width: 30%;
+  text-align: center;
+  /*border: solid 2px yellow;*/
+  background-color: #fc4a1a;
+}
+
+.containerMainB {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  /*border: solid 2px red;*/
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  height: 90px;
+  /*border: solid 2px yellow;*/
+  background-color: #795548; 
+}
+
+#centerHeader {
+  text-align: center;
+  width: 75%;
+}
+
+#centerIco {
+  text-align: center;
+}
+
+#socialIcons {
+  width: 25%;
+  text-align: center;
+  padding-top: 4px;
+  padding-right: 0px;
+}
+
+#searchBar {
+
+}
+
+.workspace {
+  height: 100%;
+  /*border: solid 2px yellow;*/
+  /*grid-gap: 50px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  margin-right: 15px;
+  margin-left: 15px;*/
+  background-image: url("./assests/img/wallpaper.jpg");
+}
+
+.workspace2 {
+  height: 100%;
+  
+  /*border: solid 2px yellow;*/
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 20px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
+.fa-facebook-official {
+  color: #3b5998;
+  background-color: white;
+}
+
+.fa-twitter-square {
+  color: #00acee;
+  background-color: white;
+}
+
+.fa-youtube-square {
+  color: #c4302b;
+  background-color: white;
+}
+
+#photo {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  border: 2px solid white;
+  background-size: 110px 110px;
+  background-image: url("./assests/img/photo.png");
+  display: inline-block;
+  margin-top: 110px;
+}
+
+#menuContent {
+  text-align: center;
+  padding-top: 10px;
+  font: 120% sans-serif;
+  color: #fafafa;
+  line-height: 1.6;
+  text-decoration: underline;
+}
+
+#menuContent ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style:none;
+}
+
+.searchItem {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.grid-item {
+  border: solid 1px black;
+  height: 80%;
+}

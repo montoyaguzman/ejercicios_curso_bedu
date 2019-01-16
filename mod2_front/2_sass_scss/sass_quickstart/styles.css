@@ -1,0 +1,61 @@
+/*$color4: yellow !default;*/
+.titulo {
+  background-color: blue;
+}
+
+.subtitulo {
+  background-color: green;
+}
+
+.cardMenu {
+  background-color: yellow;
+}
+
+.cardMenu .menu {
+  color: red;
+}
+
+#contenedor {
+  border: 3px solid yellow;
+  width: calc(450px/2);
+  height: 200px;
+  color: #efffff;
+  background-color: rgba(255, 0, 0, 0.25);
+}
+
+.link a {
+  color: blue;
+  background-color: yellow;
+}
+
+.myButton {
+  width: 100px;
+  text-align: center;
+  padding: 5px 0;
+  margin: 2px auto;
+  border-radius: 2px;
+  color: white;
+}
+
+.myButton {
+  background-color: black;
+}
+
+.profile-pic {
+  float: left;
+  width: 250px;
+}
+
+@media screen and (max-width: 320px) {
+  .profile-pic {
+    width: 100px;
+    float: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .profile-pic {
+    float: right;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
